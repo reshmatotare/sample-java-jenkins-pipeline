@@ -5,19 +5,19 @@ pipeline {
 
         stage('Check Java Version') {
             steps {
-                sh 'java -version'
+                bat 'java -version'
             }
         }
 
         stage('Compile Java Program') {
             steps {
-                sh 'javac HelloWorld.java'
+                bat 'javac HelloWorld.java'
             }
         }
 
         stage('Run Java Program') {
             steps {
-                sh 'java HelloWorld'
+                bat 'java HelloWorld'
             }
         }
     }
